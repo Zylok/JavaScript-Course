@@ -1,3 +1,4 @@
+/*
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 
@@ -9,6 +10,8 @@ console.log(firstName);
 console.log(firstName);
 console.log(firstName);
 
+
+//variable name coventions
 let jonas_matilda = "JM";
 let $function = 27;
 
@@ -22,4 +25,14 @@ let job1 = 'programmer';
 let job2 = 'teacher';
 
 console.log(myFirstJob);
-console.log(job1);
+*/
+
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+
+console.log(typeof true);
+console.log(typeof javascriptIsFun);
+console.log(typeof 23);
+console.log(typeof 'Jonas');
+
+javascriptIsFun = 'YES!';
