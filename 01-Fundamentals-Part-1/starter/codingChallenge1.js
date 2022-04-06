@@ -33,15 +33,15 @@ GOOD LUCK �
 // let markHigherBMI = markBMI > johnBMI;
 
 //Data 2
-let markMass = 95;
-let markHeight = 1.88;
+// let markMass = 95;
+// let markHeight = 1.88;
 
-let johnMass = 85;
-let johnHeight = 1.76;
+// let johnMass = 85;
+// let johnHeight = 1.76;
 
-let markBMI = markMass / markHeight ** 2;
-let johnBMI = johnMass / (johnHeight * johnHeight);
+// let markBMI = markMass / markHeight ** 2;
+// let johnBMI = johnMass / (johnHeight * johnHeight);
 
-let markHigherBMI = markBMI > johnBMI;
+// let markHigherBMI = markBMI > johnBMI;
 
-console.log(markBMI, johnBMI, markHigherBMI);
+//console.log(markBMI, johnBMI, markHigherBMI);
