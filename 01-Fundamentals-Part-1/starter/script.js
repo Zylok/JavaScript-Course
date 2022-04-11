@@ -186,4 +186,8 @@ if (height) {
     console.log("Yay");
 } else {
     console.log("Nay");
+
+const favorite = prompt("Fav Number?");
+
+console.log(favorite);
 */
