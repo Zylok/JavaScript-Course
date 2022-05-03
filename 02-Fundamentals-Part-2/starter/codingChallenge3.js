@@ -13,7 +13,7 @@ respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 tall.
 GOOD LUCK �*/
-
+/*
 const markObj = {
     fullName: `Mark Miller`,
     mass: 78,
@@ -33,4 +33,5 @@ const johnObj = {
     }
 };
 
-console.log(markObj.calcBMI() > johnObj.calcBMI() ? `${markObj.fullName}'s BMI (${markObj.bmi}) is higher than ${johnObj.fullName}'s BMI (${johnObj.bmi})` : `${johnObj.fullName}'s BMI (${johnObj.bmi}) is higher than ${markObj.fullName}'s BMI (${markObj.bmi}) `)
+console.log(markObj.calcBMI() > johnObj.calcBMI() ? `${markObj.fullName}'s BMI (${markObj.bmi}) is higher than ${johnObj.fullName}'s BMI (${johnObj.bmi})` : `${johnObj.fullName}'s BMI (${johnObj.bmi}) is higher than ${markObj.fullName}'s BMI (${markObj.bmi}) `);
+*/
