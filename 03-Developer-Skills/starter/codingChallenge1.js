@@ -22,7 +22,7 @@ GOOD LUCK �
 // - Transform each element to string with ºC
 // - String needs to contain day (index  + 1)
 // - Add ... between elements and start and end of string
-
+/*
 function printForecast(arr) {
 	let fullString = '...';
 	for (let i = 0; i < arr.length; i++) {
@@ -33,3 +33,4 @@ function printForecast(arr) {
 
 printForecast([17, 21, 23]);
 printForecast([12, 5, -5, 0, 4]);
+*/
