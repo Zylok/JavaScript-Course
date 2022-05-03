@@ -15,5 +15,3 @@ console.log(calcAge(2002));*/
 // console.log('asd'.includes('d'));
 
 // const input = prompt(`Shakira?`);
-
-//Challenge
