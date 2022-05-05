@@ -27,6 +27,3 @@ const restaurant = {
 		},
 	},
 };
-if (restaurant) {
-	console.log('sdfsdf');
-}
