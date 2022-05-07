@@ -57,7 +57,7 @@ const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
 const staffUnique = [...new Set(staff)];
 console.log(staffUnique);
 */
-
+/*
 const rest = new Map();
 rest.set('name', 'Classico Italiano');
 rest.set(1, 'Firenze, Italy');
@@ -121,3 +121,43 @@ const obj = [2, 222, 3, 333];
 for (const item of obj) {
 	console.log(item);
 }
+
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+console.log(plane[0]);
+console.log(airline.length);
+
+console.log(airline.indexOf('r'));
+console.log(airline.lastIndexOf('r'));
+
+console.log(airline.slice(4));
+console.log(airline.slice(4, 7));
+console.log(airline.slice(0, airline.indexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));
+
+console.log(airline.slice(-2));
+
+const airline = 'TAP Air Air Portugal';
+console.log(airline.replace(/Air/g, 'Water'));
+const nameLou = 'jonas';
+console.log(nameLou);
+
+const message = 'Go to gate 23!';
+console.log(message.padStart(20, '+').padEnd(35, '+'));
+
+const maskCreditCard = function (number) {
+	const str = number + '';
+	const last = str.slice(-4);
+	return last.padStart(str.length, '*');
+};
+
+console.log(maskCreditCard(435352563533443));
+console.log(maskCreditCard('432523523423434342'));
+
+//Repeat
+const message2 = 'Bad weather... Al deparature Delayed... ';
+console.log(message2.repeat(5));
+*/

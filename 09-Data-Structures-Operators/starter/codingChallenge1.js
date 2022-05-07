@@ -63,7 +63,33 @@ average, every 9 minutes" (keep in mind that a game has 90 minutes)
 4. Loop over 'gameEvents' and log each element to the console, marking
 whether it's in the first half or second half (after 45 min) of the game, like this:
 [FIRST HALF] 17: ⚽ GOAL*/
-
+/*
+Write a program that receives a list of variable names written in underscore_case
+and convert them to camelCase.
+The input will come from a textarea inserted into the DOM (see code below to
+insert the elements), and conversion will happen when the button is pressed.
+Test data (pasted to textarea, including spaces):
+underscore_case
+first_name
+Some_Variable
+ calculate_AGE
+delayed_departure
+Should produce this output (5 separate console.log outputs):
+underscoreCase ✅
+firstName ✅✅
+someVariable ✅✅✅
+calculateAge ✅✅✅✅
+delayedDeparture ✅✅✅✅✅
+Hints:
+§ Remember which character defines a new line in the textarea �
+§ The solution only needs to work for a variable made out of 2 words, like a_b
+§ Start without worrying about the ✅. Tackle that only after you have the variable
+name conversion working �
+§ This challenge is difficult on purpose, so start watching the solution in case
+you're stuck. Then pause and continue!
+Afterwards, test with your own test data!
+GOOD LUCK �
+ */
 const game = {
 	team1: 'Bayern Munich',
 	team2: 'Borrussia Dortmund',
@@ -104,6 +130,27 @@ const game = {
 		team2: 6.5,
 	},
 };
+// Coding Challenge 4
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+document.querySelector('button').textContent = 'Press';
+document.querySelector('button').addEventListener('click', function () {
+	const fullText = document.querySelector('textarea').value;
+	const variableArray = fullText.split('\n');
+	console.log(variableArray);
+	for (const variable of variableArray) {
+		let [first, second] = variable.trim().toLowerCase().split('_');
+
+		console.log(
+			first +
+				second.replace(second[0], second[0].toUpperCase()) +
+				'✅'.repeat(variableArray.indexOf(variable) + 1)
+		);
+	}
+});
+
+/*
 // Coding Challenge 3
 const gameEvents = new Map([
 	[17, '⚽ GOAL'],
@@ -134,6 +181,7 @@ gameEvents.delete(64);
 console.log(gameEvents);
 console.log(`An event happened, on average, every ${avg} minutes`);
 console.log(...gameEvents.values());
+*/
 /*
 //Coding Challenge 2
 for (const [index, name] of game.scored.entries())
